@@ -6,7 +6,7 @@
 #ifdef __GNUC__         /*Prevent 'gcc -Wall' complaining*/
 __attribute__ ((__noreturn__)) /*if we call this function at last*/
 #endif
-static void terminate(bool useExit3)
+static void terminate(Boolean useExit3)
 {
     char *s;
 
@@ -29,7 +29,7 @@ static void terminate(bool useExit3)
   corresponding to the value in 'err', along with the correspoind error message from strerror(), and
  *outputting the caller-supplied error message specified in 'format' and 'ap'.
 */
-static void outputError(bool useErr, int err, bool flushStdout, const char* format, va_list ap)
+static void outputError(Boolean useErr, int err, Boolean flushStdout, const char* format, va_list ap)
 {
 #define BUF_SIZE 500
     char buf[BUF_SIZE], userMsg[BUF_SIZE], errText[BUF_SIZE];
