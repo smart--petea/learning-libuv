@@ -1,3 +1,6 @@
+longjmp:
+	gcc error_functions.c get_num.c longjmp.c -o longjmp.o
+
 mem_segments:
 	gcc error_functions.c get_num.c mem_segments.c -o mem_segments.o
 
