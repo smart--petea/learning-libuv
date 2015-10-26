@@ -1,3 +1,9 @@
+setjmp_vars_optimized:
+	gcc -O error_functions.c get_num.c setjmp_vars.c -o setjmp_vars_optimized.o
+
+setjmp_vars:
+	gcc error_functions.c get_num.c setjmp_vars.c -o setjmp_vars.o
+
 longjmp:
 	gcc error_functions.c get_num.c longjmp.c -o longjmp.o
 
