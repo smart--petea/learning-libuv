@@ -1,3 +1,6 @@
+uv_signal:
+	gcc uv_signal.c -luv -o uv_signal.o
+
 setjmp_returned:
 	gcc -O error_functions.c get_num.c setjmp_returned.c -o setjmp_returned.o
 
