@@ -1,3 +1,6 @@
+uv_intquit:
+	gcc uv_intquit.c -luv -o uv_intquit.o
+
 intquit:
 	gcc -O error_functions.c get_num.c intquit.c -o intquit.o
 
