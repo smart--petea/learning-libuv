@@ -1,3 +1,6 @@
+intquit:
+	gcc -O error_functions.c get_num.c intquit.c -o intquit.o
+
 uv_signal:
 	gcc uv_signal.c -luv -o uv_signal.o
 
@@ -15,6 +18,9 @@ longjmp:
 
 mem_segments:
 	gcc error_functions.c get_num.c mem_segments.c -o mem_segments.o
+
+ouch_uv:
+	gcc ouch_uv.c -luv -o ouch_uv.o
 
 ouch:
 	gcc error_functions.c get_num.c ouch.c -o ouch.o
