@@ -1,3 +1,6 @@
+t_kill:
+	gcc -O error_functions.c get_num.c t_kill.c -o t_kill.o
+
 uv_intquit:
 	gcc uv_intquit.c -luv -o uv_intquit.o
 
