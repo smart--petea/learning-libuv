@@ -1,3 +1,9 @@
+sig_receiver:
+	gcc -O error_functions.c get_num.c signal_functions.c sig_receiver.c -o sig_receiver.o
+
+sig_sender:
+	gcc -O error_functions.c get_num.c sig_sender.c -o sig_sender.o
+
 uv_t_kill:
 	gcc uv_t_kill.c -luv -o uv_t_kill.o
 

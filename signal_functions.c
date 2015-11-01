@@ -19,7 +19,7 @@ void printSigset(FILE *of, const char *prefix, const sigset_t *sigset)
         if(sigismember(sigset, sig))
         {
             cnt++;
-            fprintf(of, "%s%s (%s)\n", prefix, sig, strsignal(sig));
+            fprintf(of, "%s%d (%s)\n", prefix, sig, strsignal(sig));
         }
     }
 
