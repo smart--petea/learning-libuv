@@ -50,7 +50,11 @@ int main(int argc, char* argv[])
     }
 
     while(!gotSigint)   /*Loop until SIGINT caught*/
+    {
+        printf("pid = %d\n", (int)getpid());
         continue;
+    }
+
     for(n = 1; n < NSIG; n++) /*Display number of signals received*/
         if(sigCnt[n] != 0)
             printf("%s: signal %d caught %d time%s\n", argv[0], n, sigCnt[n], (sigCnt[n] == 1) ? "" : "s");

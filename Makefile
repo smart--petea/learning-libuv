@@ -1,5 +1,11 @@
+uv_sig_receiver:
+	gcc uv_sig_receiver.c -luv -o uv_sig_receiver.o
+
 sig_receiver:
 	gcc -O error_functions.c get_num.c signal_functions.c sig_receiver.c -o sig_receiver.o
+
+uv_sig_sender:
+	gcc uv_sig_sender.c -luv -o uv_sig_sender.o
 
 sig_sender:
 	gcc -O error_functions.c get_num.c sig_sender.c -o sig_sender.o
