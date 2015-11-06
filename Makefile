@@ -1,3 +1,6 @@
+nonreentrant:
+	gcc -O error_functions.c get_num.c signal_functions.c nonreentrant.c -o nonreentrant.o -lcrypt
+
 uv_sig_receiver:
 	gcc uv_sig_receiver.c -luv -o uv_sig_receiver.o
 
