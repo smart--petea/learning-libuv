@@ -1,3 +1,9 @@
+uv_signal1:
+	gcc uv_signal1.c -luv -o uv_signal1.o
+
+uv_nonreentrant:
+	gcc uv_nonreentrant.c -luv -lcrypt -o uv_nonreentrant.o
+
 uv_idle_ex:
 	gcc uv_idle_ex.c -luv -o uv_idle_ex.o
 
@@ -54,3 +60,6 @@ ouch:
 
 real_timer: 
 	gcc error_functions.c get_num.c real_timer.c -o real_timer.o
+
+clean:
+	rm -r *.o
