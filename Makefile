@@ -1,3 +1,6 @@
+uv_idle_ex:
+	gcc uv_idle_ex.c -luv -o uv_idle_ex.o
+
 nonreentrant:
 	gcc -O error_functions.c get_num.c signal_functions.c nonreentrant.c -o nonreentrant.o -lcrypt
 
